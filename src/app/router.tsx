@@ -14,7 +14,7 @@ export const router = createBrowserRouter([
     ),
   },
   {
-    path: "/seat-selection",
+    path: "/seat-selection/:id",
     element: (
       <Layout>
         <SeatSelectionPage />

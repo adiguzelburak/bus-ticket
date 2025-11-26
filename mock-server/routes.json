@@ -1,0 +1,6 @@
+{
+  "/api/reference/agencies": "/agencies",
+  "/api/schedules*": "/schedules$1",
+  "/api/seatSchemas*": "/seatSchemas$1",
+  "/api/tickets/sell": "/sales"
+}

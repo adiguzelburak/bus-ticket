@@ -11,36 +11,37 @@ import {
   StepperTrigger,
 } from "@/components/ui/stepper";
 import {
-  BookUser,
   Check,
+  CircleDot,
   CreditCard,
-  ListTodo,
+  Eye,
   LoaderCircleIcon,
-  LockKeyhole,
+  SearchIcon,
 } from "lucide-react";
 import { useState } from "react";
 
 const steps = [
-  { title: "User Details", icon: BookUser },
-  { title: "Payment Info", icon: CreditCard },
-  { title: "Auth OTP", icon: LockKeyhole },
-  { title: "Preview Form", icon: ListTodo },
+  { title: "Search", icon: SearchIcon },
+  { title: "Seat Selection", icon: CircleDot },
+  { title: "Summary", icon: Eye },
+  { title: "Preview", icon: CreditCard },
 ];
 
 export default function StepperTitleStatus({
   onStepChange,
   children,
+  currentPage,
 }: {
   onStepChange: (step: number) => void;
   children: React.ReactNode;
+  currentPage: number;
 }) {
-  const [currentStep, setCurrentStep] = useState(1);
+  const [currentStep, setCurrentStep] = useState(currentPage);
 
   return (
     <Stepper
       value={currentStep}
       onValueChange={(e) => {
-        console.log(e);
         setCurrentStep(e);
         onStepChange(e);
       }}

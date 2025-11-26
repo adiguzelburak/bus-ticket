@@ -1,0 +1,98 @@
+{
+  "agencies": [
+    { "id": "ist-alibeykoy", "name": "İstanbul – Alibeyköy" },
+    { "id": "ist-bayrampasa", "name": "İstanbul – Bayrampaşa" },
+    { "id": "ank-astim", "name": "Ankara – AŞTİ" },
+    { "id": "bursa-otogar", "name": "Bursa – Otogar" }
+  ],
+  "schedules": [
+    {
+      "id": "TRIP-1001",
+      "company": "Atlas Lines",
+      "from": "ist-alibeykoy",
+      "to": "ank-astim",
+      "departure": "2025-11-27T08:30:00+03:00",
+      "arrival": "2025-11-27T13:15:00+03:00",
+      "price": 695,
+      "availableSeats": 36
+    },
+    {
+      "id": "TRIP-1002",
+      "company": "Metro Express",
+      "from": "ist-bayrampasa",
+      "to": "ank-astim",
+      "departure": "2025-11-27T09:15:00+03:00",
+      "arrival": "2025-11-27T14:05:00+03:00",
+      "price": 720,
+      "availableSeats": 38
+    }
+  ],
+  "seatSchemas": [
+    {
+      "id": "TRIP-1001",
+      "tripId": "TRIP-1001",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2,
+          0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0,
+          0, 2, 0, 0
+        ]
+      },
+      "seats": [
+        { "no": 1, "row": 1, "col": 1, "status": "empty" },
+        { "no": 2, "row": 1, "col": 2, "status": "empty" },
+        { "no": 3, "row": 1, "col": 4, "status": "taken" },
+        { "no": 4, "row": 1, "col": 5, "status": "empty" },
+
+        { "no": 5, "row": 2, "col": 1, "status": "empty" },
+        { "no": 6, "row": 2, "col": 2, "status": "taken" },
+        { "no": 7, "row": 2, "col": 4, "status": "empty" },
+        { "no": 8, "row": 2, "col": 5, "status": "empty" },
+
+        { "no": 9, "row": 3, "col": 1, "status": "empty" },
+        { "no": 10, "row": 3, "col": 2, "status": "empty" },
+        { "no": 11, "row": 3, "col": 4, "status": "taken" },
+        { "no": 12, "row": 3, "col": 5, "status": "taken" },
+
+        { "no": 13, "row": 4, "col": 1, "status": "empty" },
+        { "no": 14, "row": 4, "col": 2, "status": "empty" },
+        { "no": 15, "row": 4, "col": 4, "status": "empty" },
+        { "no": 16, "row": 4, "col": 5, "status": "empty" },
+
+        { "no": 17, "row": 5, "col": 1, "status": "empty" },
+        { "no": 18, "row": 5, "col": 2, "status": "empty" },
+        { "no": 19, "row": 5, "col": 4, "status": "empty" },
+        { "no": 20, "row": 5, "col": 5, "status": "empty" }
+      ],
+      "unitPrice": 695
+    },
+    {
+      "id": "TRIP-1002",
+      "tripId": "TRIP-1002",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2,
+          0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0,
+          0, 2, 0, 0
+        ]
+      },
+      "seats": [
+        { "no": 1, "row": 1, "col": 1, "status": "empty" },
+        { "no": 2, "row": 1, "col": 2, "status": "empty" },
+        { "no": 3, "row": 1, "col": 4, "status": "empty" },
+        { "no": 4, "row": 1, "col": 5, "status": "empty" },
+
+        { "no": 5, "row": 2, "col": 1, "status": "empty" },
+        { "no": 6, "row": 2, "col": 2, "status": "empty" },
+        { "no": 7, "row": 2, "col": 4, "status": "empty" },
+        { "no": 8, "row": 2, "col": 5, "status": "taken" }
+      ],
+      "unitPrice": 720
+    }
+  ],
+  "sales": []
+}

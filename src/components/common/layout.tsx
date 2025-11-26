@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import StepperTitleStatus from "../stepper/title-status";
 
 function Layout({ children }: { children: React.ReactNode }) {
@@ -9,16 +9,17 @@ function Layout({ children }: { children: React.ReactNode }) {
     "/preview": 4,
   };
   const navigate = useNavigate();
+  const location = useLocation();
+  const currentPage = pages[location.pathname as keyof typeof pages];
   return (
-    <div>
-      <StepperTitleStatus
-        onStepChange={(e) => {
-          const page = Object.keys(pages)[e - 1] as string;
-          navigate(page);
-        }}
-        children={children}
-      />
-    </div>
+    <StepperTitleStatus
+      onStepChange={(e) => {
+        const page = Object.keys(pages)[e - 1] as string;
+        navigate(page);
+      }}
+      children={children}
+      currentPage={currentPage}
+    />
   );
 }
 
