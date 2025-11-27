@@ -4,6 +4,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { format } from "date-fns";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { getAgencies, getSchedules } from "../services/api";
 import { Button } from "../components/ui/button";
 import { Badge } from "../components/ui/badge";
@@ -26,6 +27,7 @@ import {
 } from "@/components/ui/popover";
 
 function SearchPage() {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [searchResults, setSearchResults] = useState<Trip[] | null>(null);
   const [hasSearched, setHasSearched] = useState(false);
@@ -90,15 +92,15 @@ function SearchPage() {
       date: undefined as Date | undefined,
     },
     validationSchema: Yup.object({
-      from: Yup.string().required("Kalkış noktası seçiniz"),
+      from: Yup.string().required(t("search.required")),
       to: Yup.string()
-        .required("Varış noktası seçiniz")
-        .notOneOf([Yup.ref("from")], "Kalkış ve varış noktası aynı olamaz"),
+        .required(t("search.required"))
+        .notOneOf([Yup.ref("from")], t("search.sameLocationError")),
       date: Yup.date()
-        .required("Tarih seçiniz")
+        .required(t("search.required"))
         .min(
           new Date(new Date().setHours(0, 0, 0, 0)),
-          "Geçmiş bir tarih seçemezsiniz"
+          t("search.pastDateError")
         ),
     }),
     onSubmit: async (values) => {
@@ -122,7 +124,7 @@ function SearchPage() {
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
-      <h1 className="text-2xl font-bold mb-6">Otobüs Bileti Ara</h1>
+      <h1 className="text-2xl font-bold mb-6">{t("search.title")}</h1>
 
       <div className="p-6 rounded-lg shadow-md mb-8">
         <form
@@ -131,7 +133,7 @@ function SearchPage() {
         >
           <div className="w-full">
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Kalkış
+              {t("search.from")}
             </label>
             <Select
               onValueChange={(value) => formik.setFieldValue("from", value)}
@@ -146,7 +148,7 @@ function SearchPage() {
                     : "border-gray-300"
                 )}
               >
-                <SelectValue placeholder="Seçiniz" />
+                <SelectValue placeholder={t("common.select")} />
               </SelectTrigger>
               <SelectContent>
                 {agencies?.map((agency) => (
@@ -163,7 +165,7 @@ function SearchPage() {
 
           <div className="w-full">
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Varış
+              {t("search.to")}
             </label>
             <Select
               onValueChange={(value) => formik.setFieldValue("to", value)}
@@ -178,7 +180,7 @@ function SearchPage() {
                     : "border-gray-300"
                 )}
               >
-                <SelectValue placeholder="Seçiniz" />
+                <SelectValue placeholder={t("common.select")} />
               </SelectTrigger>
               <SelectContent>
                 {agencies?.map((agency) => (
@@ -195,7 +197,7 @@ function SearchPage() {
 
           <div className="w-full">
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Tarih
+              {t("common.date")}
             </label>
             <Popover>
               <PopoverTrigger asChild>
@@ -213,7 +215,7 @@ function SearchPage() {
                   {formik.values.date ? (
                     format(formik.values.date, "PPP")
                   ) : (
-                    <span>Tarih seçiniz</span>
+                    <span>{t("common.dateSelect")}</span>
                   )}
                 </Button>
               </PopoverTrigger>
@@ -242,7 +244,9 @@ function SearchPage() {
               className="w-full"
               disabled={formik.isSubmitting}
             >
-              {formik.isSubmitting ? "Aranıyor..." : "Bilet Ara"}
+              {formik.isSubmitting
+                ? t("search.searching")
+                : t("search.searchButton")}
             </Button>
           </div>
         </form>
@@ -251,18 +255,18 @@ function SearchPage() {
       {hasSearched && (
         <div className="space-y-4">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-            <h2 className="text-xl font-semibold">Seferler</h2>
+            <h2 className="text-xl font-semibold">{t("search.results")}</h2>
 
             {searchResults && searchResults.length > 0 && (
               <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
                 <div className="flex flex-wrap gap-2 items-center">
-                  <span className="text-sm font-medium text-gray-700">
-                    Firma:
+                  <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
+                    {t("search.company")}:
                   </span>
                   {uniqueCompanies.map((company) => (
                     <label
                       key={company}
-                      className="flex items-center gap-1 text-sm cursor-pointer bg-gray-100 px-2 py-1 rounded hover:bg-gray-200"
+                      className="flex items-center gap-1 text-sm cursor-pointer bg-zinc-100 dark:bg-zinc-900 px-2 py-1 rounded hover:bg-zinc-200 dark:hover:bg-zinc-800"
                     >
                       <input
                         type="checkbox"
@@ -278,13 +282,21 @@ function SearchPage() {
                 <div className="w-full sm:w-48">
                   <Select value={sortBy} onValueChange={setSortBy}>
                     <SelectTrigger>
-                      <SelectValue placeholder="Sıralama" />
+                      <SelectValue placeholder={t("search.sort")} />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="price-asc">Fiyat (Artan)</SelectItem>
-                      <SelectItem value="price-desc">Fiyat (Azalan)</SelectItem>
-                      <SelectItem value="time-asc">Saat (Erken)</SelectItem>
-                      <SelectItem value="time-desc">Saat (Geç)</SelectItem>
+                      <SelectItem value="price-asc">
+                        {t("search.sortPriceAsc")}
+                      </SelectItem>
+                      <SelectItem value="price-desc">
+                        {t("search.sortPriceDesc")}
+                      </SelectItem>
+                      <SelectItem value="time-asc">
+                        {t("search.sortTimeAsc")}
+                      </SelectItem>
+                      <SelectItem value="time-desc">
+                        {t("search.sortTimeDesc")}
+                      </SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -293,13 +305,15 @@ function SearchPage() {
           </div>
 
           {searchResults === null ? (
-            <div className="text-center py-8 text-gray-500">Yükleniyor...</div>
+            <div className="text-center py-8 text-gray-500">
+              {t("common.loading")}
+            </div>
           ) : filteredAndSortedResults.length === 0 ? (
-            <div className="text-center py-8 bg-gray-50 rounded-lg border border-dashed border-gray-300">
+            <div className="text-center py-8 rounded-lg border border-dashed border-gray-300">
               <p className="text-gray-500">
                 {searchResults.length > 0
-                  ? "Seçilen filtrelere uygun sefer bulunamadı."
-                  : "Aradığınız kriterlere uygun sefer bulunamadı."}
+                  ? t("search.filterNoResults")
+                  : t("search.noResults")}
               </p>
             </div>
           ) : (
@@ -313,12 +327,12 @@ function SearchPage() {
                     <div className="flex items-center justify-between mb-2">
                       <span className="font-bold text-lg">{trip.company}</span>
                       <Badge variant="secondary" className="text-xs">
-                        {trip.availableSeats} Koltuk
+                        {trip.availableSeats} {t("search.seatsAvailable")}
                       </Badge>
                     </div>
                     <div className="flex items-center gap-2 text-sm text-gray-600 mb-2">
                       <div className="flex flex-col">
-                        <span className="font-medium text-gray-900">
+                        <span className="font-medium text-gray-900 dark:text-zinc-100">
                           {format(new Date(trip.departure), "HH:mm")}
                         </span>
                         <span className="text-xs">
@@ -328,7 +342,7 @@ function SearchPage() {
                       </div>
                       <ArrowRight className="w-4 h-4 text-gray-400" />
                       <div className="flex flex-col">
-                        <span className="font-medium text-gray-900">
+                        <span className="font-medium text-gray-900 dark:text-zinc-100">
                           {format(new Date(trip.arrival), "HH:mm")}
                         </span>
                         <span className="text-xs">
@@ -341,13 +355,13 @@ function SearchPage() {
 
                   <div className="flex flex-col md:items-end gap-2">
                     <span className="text-xl font-bold text-blue-600">
-                      {trip.price} TL
+                      {trip.price} {t("common.currency")}
                     </span>
                     <Button
                       size="sm"
                       onClick={() => navigate(`/seat-selection/${trip.id}`)}
                     >
-                      Seç
+                      {t("search.selectSeat")}
                     </Button>
                   </div>
                 </div>

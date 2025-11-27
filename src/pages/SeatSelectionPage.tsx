@@ -8,12 +8,17 @@ import { ArrowLeft, Armchair, User, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { Seat } from "../types";
 import { format } from "date-fns";
+import { tr as trLocale, enUS as enLocale } from "date-fns/locale";
 import { Alert, AlertIcon, AlertTitle } from "@/components/ui/alert";
+import { useTranslation } from "react-i18next";
 
 function SeatSelectionPage() {
+  const { t, i18n } = useTranslation();
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const [selectedSeatNos, setSelectedSeatNos] = useState<number[]>([]);
+
+  const dateLocale = i18n.language === "tr" ? trLocale : enLocale;
 
   const { data: trip, isLoading: isLoadingTrip } = useQuery({
     queryKey: ["trip", id],
@@ -36,21 +41,19 @@ function SeatSelectionPage() {
     return agencies?.find((a) => a.id === id)?.name || id;
   };
 
-  console.log(trip);
-
   if (isLoadingTrip || isLoadingSchema) {
     return (
-      <div className="container mx-auto p-8 text-center">Yükleniyor...</div>
+      <div className="container mx-auto p-8 text-center">
+        {t("common.loading")}
+      </div>
     );
   }
 
   if (!trip || !seatSchema) {
     return (
       <div className="container mx-auto p-8 text-center">
-        <p className="text-red-500 mb-4">
-          Sefer veya koltuk bilgisi bulunamadı.
-        </p>
-        <Button onClick={() => navigate(-1)}>Geri Dön</Button>
+        <p className="text-red-500 mb-4">{t("seatSelection.tripNotFound")}</p>
+        <Button onClick={() => navigate(-1)}>{t("common.back")}</Button>
       </div>
     );
   }
@@ -63,16 +66,16 @@ function SeatSelectionPage() {
     } else {
       if (selectedSeatNos.length >= 4) {
         toast.custom(
-          (t) => (
+          (tId) => (
             <Alert
               variant="destructive"
               icon="destructive"
-              onClose={() => toast.dismiss(t)}
+              onClose={() => toast.dismiss(tId)}
             >
               <AlertIcon>
                 <X />
               </AlertIcon>
-              <AlertTitle>En fazla 4 koltuk seçebilirsiniz.</AlertTitle>
+              <AlertTitle>{t("seatSelection.maxSeatsError")}</AlertTitle>
             </Alert>
           ),
           {
@@ -125,7 +128,7 @@ function SeatSelectionPage() {
             ? "bg-blue-600 text-white hover:bg-blue-700"
             : "bg-white border border-gray-300 text-gray-700 hover:border-blue-500 hover:text-blue-500"
         )}
-        title={`Koltuk ${seat.no}`}
+        title={`${t("seatSelection.seat")} ${seat.no}`}
       >
         <Armchair className="w-5 h-5" />
         <span className="absolute -top-2 -right-2 text-[10px] font-bold bg-gray-100 px-1 rounded border">
@@ -145,29 +148,33 @@ function SeatSelectionPage() {
         onClick={() => navigate(-1)}
       >
         <ArrowLeft className="mr-2 h-4 w-4" />
-        Seferlere Dön
+        {t("seatSelection.backToTrips")}
       </Button>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2 space-y-6">
-          <div className="bg-white p-6 rounded-lg shadow-sm border">
+          <div className=" p-6 rounded-lg shadow-sm border">
             <div className="flex items-center justify-between mb-6 border-b pb-4">
               <div>
                 <h2 className="text-xl font-bold">{trip.company}</h2>
                 <p className="text-gray-500 text-sm">
-                  {format(new Date(trip.departure), "dd MMMM yyyy HH:mm")}
+                  {format(new Date(trip.departure), "dd MMMM yyyy HH:mm", {
+                    locale: dateLocale,
+                  })}
                 </p>
               </div>
               <div className="text-right">
                 <p className="font-medium">
                   {getAgencyName(trip.from)} - {getAgencyName(trip.to)}
                 </p>
-                <p className="text-sm text-gray-500">2+2 Otobüs Tipi</p>
+                <p className="text-sm text-gray-500">
+                  {t("seatSelection.busType")}
+                </p>
               </div>
             </div>
 
             <div className="flex justify-center mb-8">
-              <div className="inline-block bg-gray-50 p-8 rounded-xl border border-gray-200">
+              <div className="inline-block bg-zinc-100 dark:bg-zinc-900 p-8 rounded-xl border border-gray-200">
                 <div className="mb-8 flex justify-start px-2">
                   <div className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-500">
                     <User className="w-5 h-5" />
@@ -192,42 +199,48 @@ function SeatSelectionPage() {
 
             <div className="flex items-center justify-center gap-6 text-sm text-gray-600">
               <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded border border-gray-300 bg-white"></div>
-                <span>Boş</span>
+                <div className="w-6 h-6 rounded border border-gray-300 bg-white dark:bg-zinc-900"></div>
+                <span>{t("seatSelection.empty")}</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-6 h-6 rounded bg-blue-600"></div>
-                <span>Seçili</span>
+                <span>{t("seatSelection.selected")}</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-6 h-6 rounded bg-gray-200"></div>
-                <span>Dolu</span>
+                <span>{t("seatSelection.taken")}</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-6 h-6 rounded bg-gray-50 border border-gray-200"></div>
-                <span>Koridor</span>
+                <span>{t("seatSelection.aisle")}</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="lg:col-span-1">
-          <div className="bg-white p-6 rounded-lg shadow-sm border sticky top-4">
-            <h3 className="text-lg font-semibold mb-4">Seçilen Koltuklar</h3>
+          <div className="bg-zinc-100 dark:bg-zinc-900 p-6 rounded-lg shadow-sm border sticky top-4">
+            <h3 className="text-lg font-semibold mb-4">
+              {t("seatSelection.selectedSeats")}
+            </h3>
 
             {selectedSeatNos.length === 0 ? (
               <p className="text-gray-500 text-sm mb-6">
-                Henüz koltuk seçmediniz.
+                {t("seatSelection.noSeatSelected")}
               </p>
             ) : (
               <div className="space-y-3 mb-6">
                 {selectedSeatNos.map((no) => (
                   <div
                     key={no}
-                    className="flex items-center justify-between p-3 bg-gray-50 rounded border"
+                    className="flex items-center justify-between p-3 bg-zinc-200 dark:bg-zinc-800 rounded border"
                   >
-                    <span className="font-medium">Koltuk {no}</span>
-                    <span className="font-bold">{seatSchema.unitPrice} TL</span>
+                    <span className="font-medium">
+                      {t("seatSelection.seat")} {no}
+                    </span>
+                    <span className="font-bold">
+                      {seatSchema.unitPrice} {t("common.currency")}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -235,9 +248,9 @@ function SeatSelectionPage() {
 
             <div className="border-t pt-4 mt-auto">
               <div className="flex justify-between items-center mb-4">
-                <span className="text-gray-600">Toplam Tutar</span>
+                <span className="text-gray-600">{t("common.totalAmount")}</span>
                 <span className="text-2xl font-bold text-blue-600">
-                  {totalAmount} TL
+                  {totalAmount} {t("common.currency")}
                 </span>
               </div>
 
@@ -255,7 +268,7 @@ function SeatSelectionPage() {
                   })
                 }
               >
-                Onayla ve Devam Et
+                {t("seatSelection.confirmAndContinue")}
               </Button>
             </div>
           </div>

@@ -18,12 +18,13 @@ import {
   SearchIcon,
 } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const steps = [
-  { title: "Search", icon: SearchIcon },
-  { title: "Seat Selection", icon: CircleDot },
-  { title: "Summary", icon: Eye },
-  { title: "Preview", icon: CreditCard },
+  { title: "search", icon: SearchIcon },
+  { title: "seatSelection", icon: CircleDot },
+  { title: "passengerInfo", icon: Eye },
+  { title: "payment", icon: CreditCard },
 ];
 
 export default function StepperTitleStatus({
@@ -35,6 +36,7 @@ export default function StepperTitleStatus({
   children: React.ReactNode;
   currentPage: number;
 }) {
+  const { t } = useTranslation();
   const [currentStep, setCurrentStep] = useState(currentPage);
 
   useEffect(() => {
@@ -71,10 +73,10 @@ export default function StepperTitleStatus({
                 </StepperIndicator>
                 <div className="flex flex-col items-start gap-1">
                   <div className="text-[10px] font-semibold uppercase text-muted-foreground">
-                    Step {index + 1}
+                    {t("stepper.step")} {index + 1}
                   </div>
                   <StepperTitle className="text-start text-base font-semibold group-data-[state=inactive]/step:text-muted-foreground">
-                    {step.title}
+                    {t(`stepper.${step.title}`)}
                   </StepperTitle>
                   <div>
                     <Badge
@@ -83,7 +85,7 @@ export default function StepperTitleStatus({
                       appearance="light"
                       className="hidden group-data-[state=active]/step:inline-flex"
                     >
-                      In Progress
+                      {t("stepper.inProgress")}
                     </Badge>
 
                     <Badge
@@ -92,7 +94,7 @@ export default function StepperTitleStatus({
                       appearance="light"
                       className="hidden group-data-[state=completed]/step:inline-flex"
                     >
-                      Completed
+                      {t("stepper.completed")}
                     </Badge>
 
                     <Badge
@@ -100,7 +102,7 @@ export default function StepperTitleStatus({
                       size="sm"
                       className="hidden group-data-[state=inactive]/step:inline-flex text-muted-foreground"
                     >
-                      Waiting
+                      {t("stepper.waiting")}
                     </Badge>
                   </div>
                 </div>
