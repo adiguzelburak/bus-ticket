@@ -1,5 +1,4 @@
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import {
   Stepper,
   StepperIndicator,
@@ -18,7 +17,7 @@ import {
   LoaderCircleIcon,
   SearchIcon,
 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const steps = [
   { title: "Search", icon: SearchIcon },
@@ -37,6 +36,10 @@ export default function StepperTitleStatus({
   currentPage: number;
 }) {
   const [currentStep, setCurrentStep] = useState(currentPage);
+
+  useEffect(() => {
+    setCurrentStep(currentPage);
+  }, [currentPage]);
 
   return (
     <Stepper
@@ -97,7 +100,7 @@ export default function StepperTitleStatus({
                       size="sm"
                       className="hidden group-data-[state=inactive]/step:inline-flex text-muted-foreground"
                     >
-                      Pending
+                      Waiting
                     </Badge>
                   </div>
                 </div>
@@ -112,29 +115,6 @@ export default function StepperTitleStatus({
       </StepperNav>
 
       <StepperPanel className="text-sm">{children}</StepperPanel>
-
-      <div className="flex items-center justify-between gap-2.5">
-        <Button
-          variant="outline"
-          onClick={() => {
-            setCurrentStep((prev) => prev - 1);
-            onStepChange(currentStep - 1);
-          }}
-          disabled={currentStep === 1}
-        >
-          Previous
-        </Button>
-        <Button
-          variant="outline"
-          onClick={() => {
-            setCurrentStep((prev) => prev + 1);
-            onStepChange(currentStep + 1);
-          }}
-          disabled={currentStep === steps.length}
-        >
-          Next
-        </Button>
-      </div>
     </Stepper>
   );
 }

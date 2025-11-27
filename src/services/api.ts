@@ -48,3 +48,21 @@ export const getSeatSchema = async (tripId: string): Promise<SeatSchema> => {
   }
   return data[0];
 };
+
+export const createTicketSale = async (
+  data: import("../types").TicketSaleRequest
+): Promise<import("../types").TicketSaleResponse> => {
+  const response = await fetch(`${API_BASE_URL}/tickets/sell`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
+
+  if (!response.ok) {
+    throw new Error("Payment failed");
+  }
+
+  return response.json();
+};

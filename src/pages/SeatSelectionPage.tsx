@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { getSeatSchema, getTrip } from "../services/api";
+import { getSeatSchema, getTrip, getAgencies } from "../services/api";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { ArrowLeft, Armchair, User, X } from "lucide-react";
@@ -26,6 +26,17 @@ function SeatSelectionPage() {
     queryFn: () => getSeatSchema(id!),
     enabled: !!id,
   });
+
+  const { data: agencies } = useQuery({
+    queryKey: ["agencies"],
+    queryFn: getAgencies,
+  });
+
+  const getAgencyName = (id: string) => {
+    return agencies?.find((a) => a.id === id)?.name || id;
+  };
+
+  console.log(trip);
 
   if (isLoadingTrip || isLoadingSchema) {
     return (
@@ -149,7 +160,7 @@ function SeatSelectionPage() {
               </div>
               <div className="text-right">
                 <p className="font-medium">
-                  {trip.from} - {trip.to}
+                  {getAgencyName(trip.from)} - {getAgencyName(trip.to)}
                 </p>
                 <p className="text-sm text-gray-500">2+2 Otobüs Tipi</p>
               </div>
@@ -192,6 +203,10 @@ function SeatSelectionPage() {
                 <div className="w-6 h-6 rounded bg-gray-200"></div>
                 <span>Dolu</span>
               </div>
+              <div className="flex items-center gap-2">
+                <div className="w-6 h-6 rounded bg-gray-50 border border-gray-200"></div>
+                <span>Koridor</span>
+              </div>
             </div>
           </div>
         </div>
@@ -231,7 +246,7 @@ function SeatSelectionPage() {
                 size="lg"
                 disabled={selectedSeatNos.length === 0}
                 onClick={() =>
-                  navigate("/summary", {
+                  navigate("/passenger-form", {
                     state: {
                       trip,
                       selectedSeats: selectedSeatNos,

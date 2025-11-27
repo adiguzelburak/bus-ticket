@@ -6,8 +6,8 @@ module.exports = (req, res, next) => {
     setTimeout(() => {
       res.status(200).json({
         ok: true,
-        pnr: "AT-20251102-XYZ",
-        message: "Payment step mocked.",
+        pnr: "AT-" + new Date().toISOString().slice(0, 10).replace(/-/g, "") + "-" + Math.random().toString(36).substring(2, 5).toUpperCase(),
+        message: "Payment step mocked",
       });
     }, 500);
     return;

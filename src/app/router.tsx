@@ -1,4 +1,5 @@
 import Layout from "@/components/common/layout";
+import PassengerFormPage from "@/pages/PassengerFormPage";
 import SearchPage from "@/pages/SearchPage";
 import SeatSelectionPage from "@/pages/SeatSelectionPage";
 import SummaryPage from "@/pages/SummaryPage";
@@ -18,6 +19,14 @@ export const router = createBrowserRouter([
     element: (
       <Layout>
         <SeatSelectionPage />
+      </Layout>
+    ),
+  },
+  {
+    path: "/passenger-form",
+    element: (
+      <Layout>
+        <PassengerFormPage />
       </Layout>
     ),
   },

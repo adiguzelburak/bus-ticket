@@ -124,7 +124,7 @@ function SearchPage() {
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       <h1 className="text-2xl font-bold mb-6">Otobüs Bileti Ara</h1>
 
-      <div className="bg-white p-6 rounded-lg shadow-md mb-8">
+      <div className="p-6 rounded-lg shadow-md mb-8">
         <form
           onSubmit={formik.handleSubmit}
           className="grid grid-cols-1 md:grid-cols-4 gap-4 items-start"
@@ -140,7 +140,7 @@ function SearchPage() {
             >
               <SelectTrigger
                 className={cn(
-                  "w-full bg-white",
+                  "w-full",
                   formik.touched.from && formik.errors.from
                     ? "border-red-500"
                     : "border-gray-300"
@@ -172,7 +172,7 @@ function SearchPage() {
             >
               <SelectTrigger
                 className={cn(
-                  "w-full bg-white",
+                  "w-full",
                   formik.touched.to && formik.errors.to
                     ? "border-red-500"
                     : "border-gray-300"
@@ -202,7 +202,7 @@ function SearchPage() {
                 <Button
                   variant={"outline"}
                   className={cn(
-                    "w-full justify-start text-left font-normal bg-white",
+                    "w-full justify-start text-left font-normal",
                     !formik.values.date && "text-muted-foreground",
                     formik.touched.date && formik.errors.date
                       ? "border-red-500"
@@ -277,7 +277,7 @@ function SearchPage() {
 
                 <div className="w-full sm:w-48">
                   <Select value={sortBy} onValueChange={setSortBy}>
-                    <SelectTrigger className="bg-white">
+                    <SelectTrigger>
                       <SelectValue placeholder="Sıralama" />
                     </SelectTrigger>
                     <SelectContent>
@@ -307,7 +307,7 @@ function SearchPage() {
               {filteredAndSortedResults.map((trip) => (
                 <div
                   key={trip.id}
-                  className="bg-white border rounded-lg p-4 hover:shadow-md transition-shadow flex flex-col md:flex-row md:items-center justify-between gap-4"
+                  className="border rounded-lg p-4 hover:shadow-md transition-shadow flex flex-col md:flex-row md:items-center justify-between gap-4"
                 >
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">
