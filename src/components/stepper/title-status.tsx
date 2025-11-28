@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useSearchParams } from "react-router-dom";
 
 const steps = [
   { title: "search", icon: SearchIcon },
@@ -38,10 +39,14 @@ export default function StepperTitleStatus({
 }) {
   const { t } = useTranslation();
   const [currentStep, setCurrentStep] = useState(currentPage);
+  const searchParams = useSearchParams();
+  const success = searchParams[0]?.get("success") || "false";
+
+  const derivedStep = success === "true" ? 5 : currentPage;
 
   useEffect(() => {
-    setCurrentStep(currentPage);
-  }, [currentPage]);
+    setCurrentStep(derivedStep);
+  }, [derivedStep]);
 
   return (
     <Stepper

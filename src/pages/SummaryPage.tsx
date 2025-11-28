@@ -1,16 +1,16 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import type { Trip, Passenger } from "../types";
-import { createTicketSale, getAgencies } from "../services/api";
+import { useQuery } from "@tanstack/react-query";
 import { format } from "date-fns";
-import { useState } from "react";
-import { CheckCircle2, Printer, Download, Loader2 } from "lucide-react";
 import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
-import { useQuery } from "@tanstack/react-query";
+import { CheckCircle2, Download, Loader2, Printer } from "lucide-react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useLocation, useNavigate } from "react-router-dom";
+import { createTicketSale, getAgencies } from "../services/api";
+import type { Passenger, Trip } from "../types";
 
 interface FormData {
   passengers: Passenger[];
@@ -25,6 +25,7 @@ interface LocationState {
   selectedSeats: number[];
   totalAmount: number;
   formData: FormData;
+  pnr?: string;
 }
 
 function SummaryPage() {
@@ -34,8 +35,11 @@ function SummaryPage() {
   const state = location.state as LocationState | null;
 
   const [isLoading, setIsLoading] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
-  const [pnr, setPnr] = useState("");
+  const [isSuccess, setIsSuccess] = useState(() => {
+    const params = new URLSearchParams(location.search);
+    return params.get("success") === "true";
+  });
+  const [pnr, setPnr] = useState(state?.pnr || "");
 
   const { data: agencies } = useQuery({
     queryKey: ["agencies"],
@@ -62,8 +66,12 @@ function SummaryPage() {
       if (response.ok) {
         setPnr(response.pnr);
         setIsSuccess(true);
+        navigate("/summary?success=true", {
+          state: { ...state, pnr: response.pnr },
+        });
       } else {
         alert(`${t("summary.paymentError")}: ${response.message}`);
+        navigate("/summary?success=false", { state });
       }
     } catch (error) {
       console.error("Payment error:", error);

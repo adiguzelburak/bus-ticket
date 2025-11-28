@@ -1,9 +1,21 @@
 {
   "agencies": [
-    { "id": "ist-alibeykoy", "name": "İstanbul – Alibeyköy" },
-    { "id": "ist-bayrampasa", "name": "İstanbul – Bayrampaşa" },
-    { "id": "ank-astim", "name": "Ankara – AŞTİ" },
-    { "id": "bursa-otogar", "name": "Bursa – Otogar" }
+    {
+      "id": "ist-alibeykoy",
+      "name": "İstanbul – Alibeyköy"
+    },
+    {
+      "id": "ist-bayrampasa",
+      "name": "İstanbul – Bayrampaşa"
+    },
+    {
+      "id": "ank-astim",
+      "name": "Ankara – AŞTİ"
+    },
+    {
+      "id": "bursa-otogar",
+      "name": "Bursa – Otogar"
+    }
   ],
   "schedules": [
     {
@@ -11,8 +23,8 @@
       "company": "Atlas Lines",
       "from": "ist-alibeykoy",
       "to": "ank-astim",
-      "departure": "2025-11-27T08:30:00+03:00",
-      "arrival": "2025-11-27T13:15:00+03:00",
+      "departure": "2025-11-29T08:30:00+03:00",
+      "arrival": "2025-11-29T13:15:00+03:00",
       "price": 695,
       "availableSeats": 36
     },
@@ -21,10 +33,230 @@
       "company": "Metro Express",
       "from": "ist-bayrampasa",
       "to": "ank-astim",
-      "departure": "2025-11-27T09:15:00+03:00",
-      "arrival": "2025-11-27T14:05:00+03:00",
+      "departure": "2025-11-29T09:15:00+03:00",
+      "arrival": "2025-11-29T14:05:00+03:00",
       "price": 720,
       "availableSeats": 38
+    },
+    {
+      "id": "TRIP-1003",
+      "company": "Metro Express",
+      "from": "bursa-otogar",
+      "to": "ank-astim",
+      "departure": "2025-11-29T10:15:00+03:00",
+      "arrival": "2025-11-29T15:05:00+03:00",
+      "price": 720,
+      "availableSeats": 38
+    },
+    {
+      "id": "TRIP-20251201-1",
+      "company": "Atlas Lines",
+      "from": "ist-alibeykoy",
+      "to": "ank-astim",
+      "departure": "2025-12-01T08:30:00+03:00",
+      "arrival": "2025-12-01T13:15:00+03:00",
+      "price": 695,
+      "availableSeats": 36
+    },
+    {
+      "id": "TRIP-20251201-2",
+      "company": "Metro Express",
+      "from": "ist-bayrampasa",
+      "to": "ank-astim",
+      "departure": "2025-12-01T09:15:00+03:00",
+      "arrival": "2025-12-01T14:05:00+03:00",
+      "price": 720,
+      "availableSeats": 38
+    },
+    {
+      "id": "TRIP-20251202-1",
+      "company": "Atlas Lines",
+      "from": "ist-alibeykoy",
+      "to": "ank-astim",
+      "departure": "2025-12-02T08:30:00+03:00",
+      "arrival": "2025-12-02T13:15:00+03:00",
+      "price": 695,
+      "availableSeats": 36
+    },
+    {
+      "id": "TRIP-20251202-2",
+      "company": "Metro Express",
+      "from": "ist-bayrampasa",
+      "to": "ank-astim",
+      "departure": "2025-12-02T09:15:00+03:00",
+      "arrival": "2025-12-02T14:05:00+03:00",
+      "price": 720,
+      "availableSeats": 38
+    },
+    {
+      "id": "TRIP-20251203-1",
+      "company": "Atlas Lines",
+      "from": "ist-alibeykoy",
+      "to": "ank-astim",
+      "departure": "2025-12-03T08:30:00+03:00",
+      "arrival": "2025-12-03T13:15:00+03:00",
+      "price": 695,
+      "availableSeats": 36
+    },
+    {
+      "id": "TRIP-20251203-2",
+      "company": "Metro Express",
+      "from": "ist-bayrampasa",
+      "to": "ank-astim",
+      "departure": "2025-12-03T09:15:00+03:00",
+      "arrival": "2025-12-03T14:05:00+03:00",
+      "price": 720,
+      "availableSeats": 38
+    },
+    {
+      "id": "TRIP-20251204-1",
+      "company": "Atlas Lines",
+      "from": "ist-alibeykoy",
+      "to": "ank-astim",
+      "departure": "2025-12-04T08:30:00+03:00",
+      "arrival": "2025-12-04T13:15:00+03:00",
+      "price": 695,
+      "availableSeats": 36
+    },
+    {
+      "id": "TRIP-20251204-2",
+      "company": "Metro Express",
+      "from": "ist-bayrampasa",
+      "to": "ank-astim",
+      "departure": "2025-12-04T09:15:00+03:00",
+      "arrival": "2025-12-04T14:05:00+03:00",
+      "price": 720,
+      "availableSeats": 38
+    },
+    {
+      "id": "TRIP-20251205-1",
+      "company": "Atlas Lines",
+      "from": "ist-alibeykoy",
+      "to": "ank-astim",
+      "departure": "2025-12-05T08:30:00+03:00",
+      "arrival": "2025-12-05T13:15:00+03:00",
+      "price": 695,
+      "availableSeats": 36
+    },
+    {
+      "id": "TRIP-20251205-2",
+      "company": "Metro Express",
+      "from": "ist-bayrampasa",
+      "to": "ank-astim",
+      "departure": "2025-12-05T09:15:00+03:00",
+      "arrival": "2025-12-05T14:05:00+03:00",
+      "price": 720,
+      "availableSeats": 38
+    },
+    {
+      "id": "TRIP-20251206-1",
+      "company": "Atlas Lines",
+      "from": "ist-alibeykoy",
+      "to": "ank-astim",
+      "departure": "2025-12-06T08:30:00+03:00",
+      "arrival": "2025-12-06T13:15:00+03:00",
+      "price": 695,
+      "availableSeats": 36
+    },
+    {
+      "id": "TRIP-20251206-2",
+      "company": "Metro Express",
+      "from": "ist-bayrampasa",
+      "to": "ank-astim",
+      "departure": "2025-12-06T09:15:00+03:00",
+      "arrival": "2025-12-06T14:05:00+03:00",
+      "price": 720,
+      "availableSeats": 38
+    },
+    {
+      "id": "TRIP-20251207-1",
+      "company": "Atlas Lines",
+      "from": "ist-alibeykoy",
+      "to": "ank-astim",
+      "departure": "2025-12-07T08:30:00+03:00",
+      "arrival": "2025-12-07T13:15:00+03:00",
+      "price": 695,
+      "availableSeats": 36
+    },
+    {
+      "id": "TRIP-20251207-2",
+      "company": "Metro Express",
+      "from": "ist-bayrampasa",
+      "to": "ank-astim",
+      "departure": "2025-12-07T09:15:00+03:00",
+      "arrival": "2025-12-07T14:05:00+03:00",
+      "price": 720,
+      "availableSeats": 38
+    },
+    {
+      "id": "TRIP-20251201-3",
+      "company": "Pamukkale Turizm",
+      "from": "ist-alibeykoy",
+      "to": "ank-astim",
+      "departure": "2025-12-01T15:00:00+03:00",
+      "arrival": "2025-12-01T20:30:00+03:00",
+      "price": 750,
+      "availableSeats": 40
+    },
+    {
+      "id": "TRIP-20251202-3",
+      "company": "Pamukkale Turizm",
+      "from": "ist-alibeykoy",
+      "to": "ank-astim",
+      "departure": "2025-12-02T15:00:00+03:00",
+      "arrival": "2025-12-02T20:30:00+03:00",
+      "price": 750,
+      "availableSeats": 40
+    },
+    {
+      "id": "TRIP-20251203-3",
+      "company": "Pamukkale Turizm",
+      "from": "ist-alibeykoy",
+      "to": "ank-astim",
+      "departure": "2025-12-03T15:00:00+03:00",
+      "arrival": "2025-12-03T20:30:00+03:00",
+      "price": 750,
+      "availableSeats": 40
+    },
+    {
+      "id": "TRIP-20251204-3",
+      "company": "Pamukkale Turizm",
+      "from": "ist-alibeykoy",
+      "to": "ank-astim",
+      "departure": "2025-12-04T15:00:00+03:00",
+      "arrival": "2025-12-04T20:30:00+03:00",
+      "price": 750,
+      "availableSeats": 40
+    },
+    {
+      "id": "TRIP-20251205-3",
+      "company": "Pamukkale Turizm",
+      "from": "ist-alibeykoy",
+      "to": "ank-astim",
+      "departure": "2025-12-05T15:00:00+03:00",
+      "arrival": "2025-12-05T20:30:00+03:00",
+      "price": 750,
+      "availableSeats": 40
+    },
+    {
+      "id": "TRIP-20251206-3",
+      "company": "Pamukkale Turizm",
+      "from": "ist-alibeykoy",
+      "to": "ank-astim",
+      "departure": "2025-12-06T15:00:00+03:00",
+      "arrival": "2025-12-06T20:30:00+03:00",
+      "price": 750,
+      "availableSeats": 40
+    },
+    {
+      "id": "TRIP-20251207-3",
+      "company": "Pamukkale Turizm",
+      "from": "ist-alibeykoy",
+      "to": "ank-astim",
+      "departure": "2025-12-07T15:00:00+03:00",
+      "arrival": "2025-12-07T20:30:00+03:00",
+      "price": 750,
+      "availableSeats": 40
     }
   ],
   "seatSchemas": [
@@ -35,36 +267,179 @@
         "rows": 10,
         "cols": 5,
         "cells": [
-          0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2,
-          0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0,
-          0, 2, 0, 0
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
         ]
       },
       "seats": [
-        { "no": 1, "row": 1, "col": 1, "status": "empty" },
-        { "no": 2, "row": 1, "col": 2, "status": "empty" },
-        { "no": 3, "row": 1, "col": 4, "status": "taken" },
-        { "no": 4, "row": 1, "col": 5, "status": "empty" },
-
-        { "no": 5, "row": 2, "col": 1, "status": "empty" },
-        { "no": 6, "row": 2, "col": 2, "status": "taken" },
-        { "no": 7, "row": 2, "col": 4, "status": "empty" },
-        { "no": 8, "row": 2, "col": 5, "status": "empty" },
-
-        { "no": 9, "row": 3, "col": 1, "status": "empty" },
-        { "no": 10, "row": 3, "col": 2, "status": "empty" },
-        { "no": 11, "row": 3, "col": 4, "status": "taken" },
-        { "no": 12, "row": 3, "col": 5, "status": "taken" },
-
-        { "no": 13, "row": 4, "col": 1, "status": "empty" },
-        { "no": 14, "row": 4, "col": 2, "status": "empty" },
-        { "no": 15, "row": 4, "col": 4, "status": "empty" },
-        { "no": 16, "row": 4, "col": 5, "status": "empty" },
-
-        { "no": 17, "row": 5, "col": 1, "status": "empty" },
-        { "no": 18, "row": 5, "col": 2, "status": "empty" },
-        { "no": 19, "row": 5, "col": 4, "status": "empty" },
-        { "no": 20, "row": 5, "col": 5, "status": "empty" }
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "taken"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "taken"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 9,
+          "row": 3,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 10,
+          "row": 3,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 11,
+          "row": 3,
+          "col": 4,
+          "status": "taken"
+        },
+        {
+          "no": 12,
+          "row": 3,
+          "col": 5,
+          "status": "taken"
+        },
+        {
+          "no": 13,
+          "row": 4,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 14,
+          "row": 4,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 15,
+          "row": 4,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 16,
+          "row": 4,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 17,
+          "row": 5,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 18,
+          "row": 5,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 19,
+          "row": 5,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 20,
+          "row": 5,
+          "col": 5,
+          "status": "empty"
+        }
       ],
       "unitPrice": 695
     },
@@ -75,23 +450,3448 @@
         "rows": 10,
         "cols": 5,
         "cells": [
-          0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2,
-          0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0,
-          0, 2, 0, 0
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
         ]
       },
       "seats": [
-        { "no": 1, "row": 1, "col": 1, "status": "empty" },
-        { "no": 2, "row": 1, "col": 2, "status": "empty" },
-        { "no": 3, "row": 1, "col": 4, "status": "empty" },
-        { "no": 4, "row": 1, "col": 5, "status": "empty" },
-
-        { "no": 5, "row": 2, "col": 1, "status": "empty" },
-        { "no": 6, "row": 2, "col": 2, "status": "empty" },
-        { "no": 7, "row": 2, "col": 4, "status": "empty" },
-        { "no": 8, "row": 2, "col": 5, "status": "taken" }
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "taken"
+        }
       ],
       "unitPrice": 720
+    },
+    {
+      "id": "TRIP-20251201-1",
+      "tripId": "TRIP-20251201-1",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "seats": [
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "taken"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "taken"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 9,
+          "row": 3,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 10,
+          "row": 3,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 11,
+          "row": 3,
+          "col": 4,
+          "status": "taken"
+        },
+        {
+          "no": 12,
+          "row": 3,
+          "col": 5,
+          "status": "taken"
+        },
+        {
+          "no": 13,
+          "row": 4,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 14,
+          "row": 4,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 15,
+          "row": 4,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 16,
+          "row": 4,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 17,
+          "row": 5,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 18,
+          "row": 5,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 19,
+          "row": 5,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 20,
+          "row": 5,
+          "col": 5,
+          "status": "empty"
+        }
+      ],
+      "unitPrice": 695
+    },
+    {
+      "id": "TRIP-20251201-2",
+      "tripId": "TRIP-20251201-2",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "seats": [
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "taken"
+        }
+      ],
+      "unitPrice": 720
+    },
+    {
+      "id": "TRIP-20251202-1",
+      "tripId": "TRIP-20251202-1",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "seats": [
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "taken"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "taken"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 9,
+          "row": 3,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 10,
+          "row": 3,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 11,
+          "row": 3,
+          "col": 4,
+          "status": "taken"
+        },
+        {
+          "no": 12,
+          "row": 3,
+          "col": 5,
+          "status": "taken"
+        },
+        {
+          "no": 13,
+          "row": 4,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 14,
+          "row": 4,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 15,
+          "row": 4,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 16,
+          "row": 4,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 17,
+          "row": 5,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 18,
+          "row": 5,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 19,
+          "row": 5,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 20,
+          "row": 5,
+          "col": 5,
+          "status": "empty"
+        }
+      ],
+      "unitPrice": 695
+    },
+    {
+      "id": "TRIP-20251202-2",
+      "tripId": "TRIP-20251202-2",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "seats": [
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "taken"
+        }
+      ],
+      "unitPrice": 720
+    },
+    {
+      "id": "TRIP-20251203-1",
+      "tripId": "TRIP-20251203-1",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "seats": [
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "taken"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "taken"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 9,
+          "row": 3,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 10,
+          "row": 3,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 11,
+          "row": 3,
+          "col": 4,
+          "status": "taken"
+        },
+        {
+          "no": 12,
+          "row": 3,
+          "col": 5,
+          "status": "taken"
+        },
+        {
+          "no": 13,
+          "row": 4,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 14,
+          "row": 4,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 15,
+          "row": 4,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 16,
+          "row": 4,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 17,
+          "row": 5,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 18,
+          "row": 5,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 19,
+          "row": 5,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 20,
+          "row": 5,
+          "col": 5,
+          "status": "empty"
+        }
+      ],
+      "unitPrice": 695
+    },
+    {
+      "id": "TRIP-20251203-2",
+      "tripId": "TRIP-20251203-2",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "seats": [
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "taken"
+        }
+      ],
+      "unitPrice": 720
+    },
+    {
+      "id": "TRIP-20251204-1",
+      "tripId": "TRIP-20251204-1",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "seats": [
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "taken"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "taken"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 9,
+          "row": 3,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 10,
+          "row": 3,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 11,
+          "row": 3,
+          "col": 4,
+          "status": "taken"
+        },
+        {
+          "no": 12,
+          "row": 3,
+          "col": 5,
+          "status": "taken"
+        },
+        {
+          "no": 13,
+          "row": 4,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 14,
+          "row": 4,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 15,
+          "row": 4,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 16,
+          "row": 4,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 17,
+          "row": 5,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 18,
+          "row": 5,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 19,
+          "row": 5,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 20,
+          "row": 5,
+          "col": 5,
+          "status": "empty"
+        }
+      ],
+      "unitPrice": 695
+    },
+    {
+      "id": "TRIP-20251204-2",
+      "tripId": "TRIP-20251204-2",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "seats": [
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "taken"
+        }
+      ],
+      "unitPrice": 720
+    },
+    {
+      "id": "TRIP-20251205-1",
+      "tripId": "TRIP-20251205-1",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "seats": [
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "taken"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "taken"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 9,
+          "row": 3,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 10,
+          "row": 3,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 11,
+          "row": 3,
+          "col": 4,
+          "status": "taken"
+        },
+        {
+          "no": 12,
+          "row": 3,
+          "col": 5,
+          "status": "taken"
+        },
+        {
+          "no": 13,
+          "row": 4,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 14,
+          "row": 4,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 15,
+          "row": 4,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 16,
+          "row": 4,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 17,
+          "row": 5,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 18,
+          "row": 5,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 19,
+          "row": 5,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 20,
+          "row": 5,
+          "col": 5,
+          "status": "empty"
+        }
+      ],
+      "unitPrice": 695
+    },
+    {
+      "id": "TRIP-20251205-2",
+      "tripId": "TRIP-20251205-2",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "seats": [
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "taken"
+        }
+      ],
+      "unitPrice": 720
+    },
+    {
+      "id": "TRIP-20251206-1",
+      "tripId": "TRIP-20251206-1",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "seats": [
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "taken"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "taken"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 9,
+          "row": 3,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 10,
+          "row": 3,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 11,
+          "row": 3,
+          "col": 4,
+          "status": "taken"
+        },
+        {
+          "no": 12,
+          "row": 3,
+          "col": 5,
+          "status": "taken"
+        },
+        {
+          "no": 13,
+          "row": 4,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 14,
+          "row": 4,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 15,
+          "row": 4,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 16,
+          "row": 4,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 17,
+          "row": 5,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 18,
+          "row": 5,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 19,
+          "row": 5,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 20,
+          "row": 5,
+          "col": 5,
+          "status": "empty"
+        }
+      ],
+      "unitPrice": 695
+    },
+    {
+      "id": "TRIP-20251206-2",
+      "tripId": "TRIP-20251206-2",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "seats": [
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "taken"
+        }
+      ],
+      "unitPrice": 720
+    },
+    {
+      "id": "TRIP-20251207-1",
+      "tripId": "TRIP-20251207-1",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "seats": [
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "taken"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "taken"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 9,
+          "row": 3,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 10,
+          "row": 3,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 11,
+          "row": 3,
+          "col": 4,
+          "status": "taken"
+        },
+        {
+          "no": 12,
+          "row": 3,
+          "col": 5,
+          "status": "taken"
+        },
+        {
+          "no": 13,
+          "row": 4,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 14,
+          "row": 4,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 15,
+          "row": 4,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 16,
+          "row": 4,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 17,
+          "row": 5,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 18,
+          "row": 5,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 19,
+          "row": 5,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 20,
+          "row": 5,
+          "col": 5,
+          "status": "empty"
+        }
+      ],
+      "unitPrice": 695
+    },
+    {
+      "id": "TRIP-20251207-2",
+      "tripId": "TRIP-20251207-2",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "seats": [
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "taken"
+        }
+      ],
+      "unitPrice": 720
+    },
+    {
+      "id": "TRIP-20251201-3",
+      "tripId": "TRIP-20251201-3",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "seats": [
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 9,
+          "row": 3,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 10,
+          "row": 3,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 11,
+          "row": 3,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 12,
+          "row": 3,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 13,
+          "row": 4,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 14,
+          "row": 4,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 15,
+          "row": 4,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 16,
+          "row": 4,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 17,
+          "row": 5,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 18,
+          "row": 5,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 19,
+          "row": 5,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 20,
+          "row": 5,
+          "col": 5,
+          "status": "empty"
+        }
+      ],
+      "unitPrice": 750
+    },
+    {
+      "id": "TRIP-20251202-3",
+      "tripId": "TRIP-20251202-3",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "seats": [
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 9,
+          "row": 3,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 10,
+          "row": 3,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 11,
+          "row": 3,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 12,
+          "row": 3,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 13,
+          "row": 4,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 14,
+          "row": 4,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 15,
+          "row": 4,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 16,
+          "row": 4,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 17,
+          "row": 5,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 18,
+          "row": 5,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 19,
+          "row": 5,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 20,
+          "row": 5,
+          "col": 5,
+          "status": "empty"
+        }
+      ],
+      "unitPrice": 750
+    },
+    {
+      "id": "TRIP-20251203-3",
+      "tripId": "TRIP-20251203-3",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "seats": [
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 9,
+          "row": 3,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 10,
+          "row": 3,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 11,
+          "row": 3,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 12,
+          "row": 3,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 13,
+          "row": 4,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 14,
+          "row": 4,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 15,
+          "row": 4,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 16,
+          "row": 4,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 17,
+          "row": 5,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 18,
+          "row": 5,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 19,
+          "row": 5,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 20,
+          "row": 5,
+          "col": 5,
+          "status": "empty"
+        }
+      ],
+      "unitPrice": 750
+    },
+    {
+      "id": "TRIP-20251204-3",
+      "tripId": "TRIP-20251204-3",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "seats": [
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 9,
+          "row": 3,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 10,
+          "row": 3,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 11,
+          "row": 3,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 12,
+          "row": 3,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 13,
+          "row": 4,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 14,
+          "row": 4,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 15,
+          "row": 4,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 16,
+          "row": 4,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 17,
+          "row": 5,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 18,
+          "row": 5,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 19,
+          "row": 5,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 20,
+          "row": 5,
+          "col": 5,
+          "status": "empty"
+        }
+      ],
+      "unitPrice": 750
+    },
+    {
+      "id": "TRIP-20251205-3",
+      "tripId": "TRIP-20251205-3",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "seats": [
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 9,
+          "row": 3,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 10,
+          "row": 3,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 11,
+          "row": 3,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 12,
+          "row": 3,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 13,
+          "row": 4,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 14,
+          "row": 4,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 15,
+          "row": 4,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 16,
+          "row": 4,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 17,
+          "row": 5,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 18,
+          "row": 5,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 19,
+          "row": 5,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 20,
+          "row": 5,
+          "col": 5,
+          "status": "empty"
+        }
+      ],
+      "unitPrice": 750
+    },
+    {
+      "id": "TRIP-20251206-3",
+      "tripId": "TRIP-20251206-3",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "seats": [
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 9,
+          "row": 3,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 10,
+          "row": 3,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 11,
+          "row": 3,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 12,
+          "row": 3,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 13,
+          "row": 4,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 14,
+          "row": 4,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 15,
+          "row": 4,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 16,
+          "row": 4,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 17,
+          "row": 5,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 18,
+          "row": 5,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 19,
+          "row": 5,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 20,
+          "row": 5,
+          "col": 5,
+          "status": "empty"
+        }
+      ],
+      "unitPrice": 750
+    },
+    {
+      "id": "TRIP-20251207-3",
+      "tripId": "TRIP-20251207-3",
+      "layout": {
+        "rows": 10,
+        "cols": 5,
+        "cells": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "seats": [
+        {
+          "no": 1,
+          "row": 1,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 2,
+          "row": 1,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 3,
+          "row": 1,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 4,
+          "row": 1,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 5,
+          "row": 2,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 6,
+          "row": 2,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 7,
+          "row": 2,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 8,
+          "row": 2,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 9,
+          "row": 3,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 10,
+          "row": 3,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 11,
+          "row": 3,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 12,
+          "row": 3,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 13,
+          "row": 4,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 14,
+          "row": 4,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 15,
+          "row": 4,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 16,
+          "row": 4,
+          "col": 5,
+          "status": "empty"
+        },
+        {
+          "no": 17,
+          "row": 5,
+          "col": 1,
+          "status": "empty"
+        },
+        {
+          "no": 18,
+          "row": 5,
+          "col": 2,
+          "status": "empty"
+        },
+        {
+          "no": 19,
+          "row": 5,
+          "col": 4,
+          "status": "empty"
+        },
+        {
+          "no": 20,
+          "row": 5,
+          "col": 5,
+          "status": "empty"
+        }
+      ],
+      "unitPrice": 750
     }
   ],
   "sales": []
